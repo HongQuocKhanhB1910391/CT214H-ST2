@@ -1,0 +1,43 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Outer box */
+div {
+    width: 400px;
+    background-color: lightyellow;
+    border: 3px solid brown;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Image border */
+.picture {
+    border-style: inset;
+    border-width: 5px;
+    border-color: orange;
+    max-width: 100%;
+    height: auto;
+    width: 340px;
+}
+
+/* Inner box without scrollbar */
+
+div p {
+    border: 2px solid blue;
+    background-color: lightgreen;
+    padding: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Avoid content flowing out */
+}
+
+/* Inner box with scrollbar */
+div div {
+    border: 2px solid red;
+    background-color: lightblue;
+    padding: 10px;
+    overflow: auto;
+    /* Display scrollbar when content overflows */
+}

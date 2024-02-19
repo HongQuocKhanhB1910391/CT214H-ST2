@@ -1,0 +1,93 @@
+body{
+    margin: 20px;
+    padding:0;
+    background-image: url(./my-music-background.gif);
+    background-size: cover;
+    background-position: center;
+}
+.sidebar {
+    float: left;
+    margin-right: 20px;
+    border: 5px solid #076868;
+    background-color: #77e7e7;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid white;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-image: url(./music-flower.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+.one {
+    background-color:  #a8f0f0;
+    border: none;
+    text-align: right;
+}
+
+.two {
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.three {
+    border: 5px solid #c2e9e9;
+    box-sizing: border-box;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 4px;
+    border-radius: 15px;
+    display: inline-block;
+    
+}
+.four {
+    border-bottom: 2px dashed cyan;
+    padding: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+        
+}
+
+h1,
+h2,
+p,
+a {
+    font: none;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+}
+
+.spacer {
+    height: 20px;
+
+}
+
+p:last-child {
+    margin-bottom: 0;
+
+}
+
+p[class="spacer"] {
+    margin: 0;
+}
+
