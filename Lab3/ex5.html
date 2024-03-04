@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Exercise</title>
+    <link rel="stylesheet" href="ex5.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <form>
+            <table id="myForm">
+                <tr>
+                    <div id="title">
+                        <h1>Personal Information</h1>
+                    </div>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter name*:</td>
+                    <td class="form-right"><input type="text" id="name"></td>
+                    <td class="form-noti"><span class="noti" id="noti-name"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Sex*:</td>
+                    <td class="form-right">
+                        <input type="radio" name="sex" id="male" value="Male" />Male
+                        <input type="radio" name="sex" id="female" value="Female" />Female
+
+                    </td>
+                    <td class="form-noti"><span class="noti" id="noti-sex"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter email address*:</td>
+                    <td class="form-right"><input type="text" id="email"></td>
+                    <td class="form-noti"><span class="noti" id="noti-email"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter birthday (MM/DD/YYYY)*:</td>
+                    <td class="form-right"><input type="text" id="birthday"></td>
+                    <td class="form-noti"><span class="noti" id="noti-birthday"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter street address (line 1)*:</td>
+                    <td class="form-right"><input type="text" id="street"></td>
+                    <td class="form-noti"><span class="noti" id="noti-street"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter city*:</td>
+                    <td class="form-right"><input type="text" id="city"></td>
+                    <td class="form-noti"><span class="noti" id="noti-city"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Select a region*:</td>
+                    <td class="form-right">
+                        <select id="region">
+                            <option value="Choose">Choose Region</option>
+                            <option value="MienBac">North</option>
+                            <option value="MienTrung">Central</option>
+                            <option value="MienNam">South</option>
+                        </select>
+
+                    </td>
+                    <td class="form-noti"><span class="noti" id="noti-region"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left">Enter 5-digit ZIP code*:</td>
+                    <td class="form-right"><input type="text" id="zipcode"></td>
+                    <td class="form-noti"><span class="noti" id="noti-zipcode"></span></td>
+                </tr>
+                <tr>
+                    <td class="form-left"><input type="button" value="Finished" onclick="checkValid()"></td>
+                    <td class="form-right"><input type="button" value="Clear" onclick="setClear()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="lab2_5.js"></script>
+</body>
+
+</html>
